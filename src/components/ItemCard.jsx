@@ -1,6 +1,8 @@
 //Individual Item Card
 //Shop Page is going to handle card data
 
+import '../components/ItemCard.css';
+
 export default function ItemCard( {name, image, quantity} ){
 
     return (

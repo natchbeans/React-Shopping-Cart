@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import ItemCard from './ItemCard';
+import '../components/ShoppingPage.css'
 
 export default function ShoppingPage(){
 
@@ -9,7 +10,7 @@ export default function ShoppingPage(){
     
     useEffect( () => {
         const uniqueIDs = new Set(); //starts as empty
-        while(uniqueIDs.size < 3){
+        while(uniqueIDs.size < 12){
             const randomID = Math.floor(Math.random() * 20) + 1;
             uniqueIDs.add(randomID);
         }
@@ -39,9 +40,11 @@ export default function ShoppingPage(){
 
     return (
         //Need to take productList, and return the display
-        productList.map( (eachProduct) => (
-            <ItemCard name={eachProduct.name} image={eachProduct.image} key={eachProduct.id}/>
-        ))
+        <div className='itemGallery'>
+            {productList.map( (eachProduct) => (
+                <ItemCard name={eachProduct.name} image={eachProduct.image} key={eachProduct.id}/>
+            ))}
+        </div>
         
     );
 };

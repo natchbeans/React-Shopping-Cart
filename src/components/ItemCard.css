@@ -1,0 +1,39 @@
+.itemCard {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 350px;
+    width: 280px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10%;
+    justify-content: center;
+}
+
+.itemCard img{
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10%;
+    margin-bottom: -8px;
+}
+
+.itemName{
+    flex-shrink: 0;
+    color: black;
+    margin-bottom: -2px;
+}
+
+.itemCard input{
+    flex-shrink: 0;
+    height:20px;
+    width: 200px;
+    margin-left: 35px;
+    background-color: white;
+    color: black;
+}
+
+
+
+

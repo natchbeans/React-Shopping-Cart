@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    background-color: #24252A;
+}
+
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%
+}
+
+.header-list{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.website-name, .header-list{
+    color: antiquewhite;
+}
+
+.website-button{
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid black;
+    height: 40px;
+    width: 100px;
+    padding: 9px 25px;
+    transition: all 0.3s ease 0s;
+    background-color: rgba(166, 206, 198, 1);
+}
+
+.website-button:hover{
+    background-color: rgba(166, 206, 198, 0.7);
+}
