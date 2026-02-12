@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import ItemCard from './ItemCard';
 import '../components/ShoppingPage.css'
+import { Link } from "react-router-dom";
 
 export default function ShoppingPage(){
 
@@ -40,11 +41,21 @@ export default function ShoppingPage(){
 
     return (
         //Need to take productList, and return the display
-        <div className='itemGallery'>
-            {productList.map( (eachProduct) => (
-                <ItemCard name={eachProduct.name} image={eachProduct.image} key={eachProduct.id}/>
-            ))}
+
+        <div>
+            <nav className="header">
+                <h4 className="website-name">Mock Website</h4>
+                <ul className="header-list">
+                    <li><Link to="/">Homepage</Link></li>
+                    <li><Link to="/shopping">Shopping</Link></li>
+                </ul>
+            </nav>
+
+            <div className='itemGallery'>
+                {productList.map( (eachProduct) => (
+                    <ItemCard name={eachProduct.name} image={eachProduct.image} key={eachProduct.id}/>
+                ))}
+            </div>
         </div>
-        
     );
 };

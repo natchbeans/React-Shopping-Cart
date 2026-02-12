@@ -17,10 +17,21 @@ body{
     justify-content: flex-end;
     align-items: center;
     gap: 2rem;
+    list-style: none;
 }
 
-.website-name, .header-list{
-    color: antiquewhite;
+.header-list a {
+    text-decoration: none;
+    color: rgba(250, 235, 215,1);
+    transition: all 0.3s ease 0s;
+}
+
+.header-list a:hover{
+    color: rgba(250, 235, 215,0.8);
+}
+
+.website-name{
+    color: rgba(250, 235, 215);
 }
 
 .website-button{
